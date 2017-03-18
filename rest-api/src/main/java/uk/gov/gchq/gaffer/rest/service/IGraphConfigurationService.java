@@ -59,12 +59,12 @@ public interface IGraphConfigurationService {
 
     @GET
     @Path("/elementGenerators")
-    @ApiOperation(value = "Gets available generators", response = Class.class, responseContainer = "list")
+    @ApiOperation(value = "Gets available element generators", response = Class.class, responseContainer = "list")
     Set<Class> getElementGenerators();
 
     @GET
     @Path("/objectGenerators")
-    @ApiOperation(value = "Gets available generators", response = Class.class, responseContainer = "list")
+    @ApiOperation(value = "Gets available object generators", response = Class.class, responseContainer = "list")
     Set<Class> getObjectGenerators();
 
     @GET
