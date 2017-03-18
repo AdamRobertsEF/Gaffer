@@ -58,9 +58,14 @@ public interface IGraphConfigurationService {
     Set<Class> getTransformFunctions();
 
     @GET
-    @Path("/generators")
+    @Path("/elementGenerators")
     @ApiOperation(value = "Gets available generators", response = Class.class, responseContainer = "list")
-    Set<Class> getGenerators();
+    Set<Class> getElementGenerators();
+
+    @GET
+    @Path("/objectGenerators")
+    @ApiOperation(value = "Gets available generators", response = Class.class, responseContainer = "list")
+    Set<Class> getObjectGenerators();
 
     @GET
     @Path("/operations")
